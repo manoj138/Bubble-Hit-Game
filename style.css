@@ -210,6 +210,7 @@ body {
     height: 95%;
     padding: 10px;
     border-radius: 20px;
+    margin-bottom: 20px;
   }
 
   .card-section {
@@ -236,9 +237,9 @@ body {
   }
 
   .circle {
-    height: 45px;
-    width: 45px;
-    font-size: 1.1em;
+    height: 55px;
+    width: 55px;
+    font-size: 1.4em;
     
   }
 
@@ -259,9 +260,9 @@ body {
 
 @media (max-width: 480px) {
   .circle {
-    height: 40px;
-    width: 40px;
-    font-size: 1em;
+    height: 55px;
+    width: 55px;
+    font-size: 1.4em;
   }
 
   .hitValue,
@@ -274,10 +275,18 @@ body {
   .card {
     border-radius: 15px;
     padding: 8px;
+    margin-bottom: 10px;
   }
 
   .btn {
     padding: 8px 20px;
     font-size: 0.95rem;
+  }
+    .game-over {
+    top: 25%;
+    width: 300px;
+    padding: 10px;
+    font-size: 0.6em;
+   
   }
 }

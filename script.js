@@ -23,7 +23,7 @@ const colors = [
 let hitValue;
 let score = 0;
 let gameActive = true;
-
+audioElement.play();
 function mainFuction() {
   if (!gameActive) return;
   audioElement.play();
