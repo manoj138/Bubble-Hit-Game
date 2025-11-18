@@ -230,19 +230,34 @@ body {
 
 /* Ultra Small (320px) */
 @media (max-width: 360px) {
-  .circle {
-    width: 33px;
-    height: 33px;
-    font-size: 0.9rem;
+  .card {
+    width: 98%;
+    
+    padding: 10px;
+  }
+
+  .card-section {
+    justify-content: center;
   }
 
   .card-section div {
-    padding: 6px 10px;
-    font-size: 0.75rem;
+    padding: 8px 12px;
+    font-size: 0.88rem;
+  }
+
+  .circle {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
   }
 
   .btn {
-    font-size: 0.9rem;
-    padding: 6px 16px;
+    bottom: 15px;
+    font-size: 1rem;
+    padding: 8px 20px;
+  }
+  .game-over{
+    width: 100%;
+    font-size: 0.7em;
   }
 }
