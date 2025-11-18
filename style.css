@@ -203,13 +203,22 @@ body {
     justify-content: flex-start;
     align-items: center;
   }
+ .container {
+    padding: 10px;
+    flex-direction: column;
+  
+    justify-content: center;
+    align-items: center;
+  }
+  
 
   .card {
     width: 95%;
-    height: 95%;
+    height: 95%; 
     padding: 10px;
     border-radius: 20px;
-    margin-bottom: 0;
+    
+    margin-bottom: 0; 
   }
 
   .card-section {
@@ -272,10 +281,22 @@ body {
     padding: 8px 10px;
   }
 
+ .container {
+    padding: 10px;
+    flex-direction: column;
+  
+    justify-content: center;
+    align-items: center;
+  }
+  
+
   .card {
-    border-radius: 15px;
-    padding: 8px;
-    margin-bottom: 50px;
+    width: 95%;
+    height: 95%; 
+    padding: 10px;
+    border-radius: 20px;
+    
+    margin-bottom: 0; 
   }
 
   .btn {
