@@ -197,96 +197,105 @@ body {
 }
 
 
+/* --- IMPROVED MOBILE CSS (For screens up to 768px) --- */
 @media (max-width: 768px) {
   .container {
     padding: 10px;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: flex-start; /* Start content from the top */
     align-items: center;
   }
 
   .card {
     width: 95%;
-    height: 95%;
+    height: 95%; /* Maintain relative height */
     padding: 10px;
     border-radius: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 0; /* Remove extra margin at the bottom */
   }
 
   .card-section {
     flex-direction: column;
-    gap: 10px;
+    gap: 8px; /* Slightly tighter spacing for mobile sections */
   }
 
+  /* Ensure score/timer boxes are visually consistent and readable */
   .hitValue,
   .timer,
   .highScore,
   .score {
     padding: 10px 15px;
-    font-size: 1.1em;
+    font-size: 1em; /* Reduced for better fit on small screens */
     width: 100%;
     text-align: center;
+    /* Add margin to separate when stacked */
+    margin-bottom: 5px; 
   }
 
+  /* Focus the game area in the available space */
   .box-section {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 8px;
     padding: 8px;
     border-radius: 15px;
+    /* Important: Ensure it uses the available height better */
+    flex: 1; 
   }
 
   .circle {
-    height: 55px;
-    width: 55px;
-    font-size: 1.4em;
-    
+    height: 50px; /* Slightly smaller bubbles */
+    width: 50px;
+    font-size: 1.3em;
   }
-
+  
+  /* Game Over screen adjustments */
   .game-over {
     top: 25%;
-    width: 300px;
-    padding: 10px;
-    font-size: 0.6em;
-   
+    width: 90%; /* Use more width on mobile */
+    max-width: 350px;
+    padding: 15px;
+    font-size: 0.9em; /* Larger font for readability */
+    border-radius: 15px;
   }
 
   .btn {
-    padding:  25px;
+    padding: 15px 30px; /* Standardize button padding */
     font-size: 1rem;
   }
 }
 
 
+/* --- IMPROVED SMALLEST MOBILE CSS (For screens up to 480px) --- */
 @media (max-width: 480px) {
   .circle {
-    height: 55px;
-    width: 55px;
-    font-size: 1.4em;
+    height: 48px; /* Even smaller bubbles for very small phones */
+    width: 48px;
+    font-size: 1.3em;
   }
 
   .hitValue,
   .timer,
   .score {
-    font-size: 1em;
-    padding: 8px 12px;
+    font-size: 0.9em; /* Smaller font for score/timer on smallest screens */
+    padding: 8px 10px;
   }
 
   .card {
     border-radius: 15px;
     padding: 8px;
-    margin-bottom: 10px;
   }
 
   .btn {
-    padding: 8px 20px;
-    font-size: 0.95rem;
+    padding: 10px 25px;
+    font-size: 0.9rem;
   }
-    .game-over {
-    top: 25%;
-    width: 300px;
+  
+  .game-over {
+    top: 30%;
+    width: 90%;
+    max-width: 300px;
     padding: 10px;
-    font-size: 0.6em;
-   
+    font-size: 0.8em;
   }
 }
