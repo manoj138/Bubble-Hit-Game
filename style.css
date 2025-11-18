@@ -282,9 +282,8 @@ body {
   }
 
  .container {
-    padding: 10px;
+    padding-bottom: 10px;
     flex-direction: column;
-  
     justify-content: center;
     align-items: center;
   }
@@ -292,14 +291,14 @@ body {
 
   .card {
     width: 95%;
-    height: 50%; 
+    height: 90%; 
     padding: 10px;
     border-radius: 20px;
-    
     margin-bottom: 0; 
   }
 
   .btn {
+    margin-top: 30px;
     padding: 10px 25px;
     font-size: 0.9rem;
   }
