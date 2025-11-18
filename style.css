@@ -275,6 +275,7 @@ body {
   .card {
     border-radius: 15px;
     padding: 8px;
+    margin-bottom: 50px;
   }
 
   .btn {
