@@ -65,6 +65,7 @@ let highScoreValue = parseInt(localStorage.getItem('highScoreValue')) || 0;
 highScoreElement.textContent = `High Score : ${highScoreValue}`;
 
 
+
 function scoreFunction() {
   boxElement.addEventListener("click", (event) => {
     if (!gameActive) return;
@@ -80,10 +81,12 @@ function scoreFunction() {
         wrongElement.play();
       }
 
-      if (score > highScoreValue) {
-        highScoreValue = score;
-        localStorage.setItem('highScoreValue', highScoreValue);
-      }
+if (score > highScoreValue) {
+    highScoreValue = score;
+    localStorage.setItem('highScoreValue', highScoreValue);
+    highScoreElement.textContent = `High Score : ${highScoreValue}`;  
+}
+
 
       scoreElement.textContent = `Score : ${score}`;
       setHitValue();
